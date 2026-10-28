@@ -1,7 +1,7 @@
 {
   "model_name": "hist_gradient_boosting",
   "model_label": "Histogram Gradient Boosting",
-  "created_utc": "2026-10-28T16:59:14+00:00",
+  "created_utc": "2026-10-28T17:01:31+00:00",
   "best_params": {
     "model__class_weight": null,
     "model__learning_rate": 0.03,
@@ -111,7 +111,7 @@
     "model__learning_rate",
     "model__min_samples_leaf"
   ],
-  "fit_seconds": 26.93,
+  "fit_seconds": 32.96,
   "feature_columns": [
     "gender",
     "SeniorCitizen",

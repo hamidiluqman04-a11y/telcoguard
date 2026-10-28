@@ -1,7 +1,7 @@
 {
   "model_name": "logistic_regression",
   "model_label": "Logistic Regression",
-  "created_utc": "2026-10-28T16:59:14+00:00",
+  "created_utc": "2026-10-28T17:01:31+00:00",
   "best_params": {
     "model__C": 1.0,
     "model__class_weight": null
@@ -98,7 +98,7 @@
     ]
   },
   "params_at_grid_edge": [],
-  "fit_seconds": 5.37,
+  "fit_seconds": 6.01,
   "feature_columns": [
     "gender",
     "SeniorCitizen",
