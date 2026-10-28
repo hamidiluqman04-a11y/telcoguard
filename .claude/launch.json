@@ -1,0 +1,35 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "nb01-app",
+      "runtimeExecutable": ".venv/Scripts/marimo.exe",
+      "runtimeArgs": ["run", "notebooks/01_data_exploration.py", "--headless", "--port", "2718", "--no-token"],
+      "port": 2718
+    },
+    {
+      "name": "nb02-app",
+      "runtimeExecutable": ".venv/Scripts/marimo.exe",
+      "runtimeArgs": ["run", "notebooks/02_data_preprocessing.py", "--headless", "--port", "2719", "--no-token"],
+      "port": 2719
+    },
+    {
+      "name": "nb03-app",
+      "runtimeExecutable": ".venv/Scripts/marimo.exe",
+      "runtimeArgs": ["run", "notebooks/03_model_training.py", "--headless", "--port", "2720", "--no-token"],
+      "port": 2720
+    },
+    {
+      "name": "nb04-app",
+      "runtimeExecutable": ".venv/Scripts/marimo.exe",
+      "runtimeArgs": ["run", "notebooks/04_model_evaluation.py", "--headless", "--port", "2721", "--no-token"],
+      "port": 2721
+    },
+    {
+      "name": "nb05-app",
+      "runtimeExecutable": ".venv/Scripts/marimo.exe",
+      "runtimeArgs": ["run", "notebooks/05_churn_insights.py", "--headless", "--port", "2722", "--no-token"],
+      "port": 2722
+    }
+  ]
+}

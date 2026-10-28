@@ -1,0 +1,113 @@
+{
+  "selection_metric": "average_precision",
+  "cv_ranking": [
+    "hist_gradient_boosting",
+    "random_forest",
+    "logistic_regression"
+  ],
+  "cv_scores": {
+    "hist_gradient_boosting": {
+      "average_precision": {
+        "mean": 0.6684916919359333,
+        "std": 0.021748824073205483,
+        "train_mean": 0.7167415839567803
+      },
+      "roc_auc": {
+        "mean": 0.8488231777152719,
+        "std": 0.011694663451864876,
+        "train_mean": 0.8739118260597054
+      },
+      "f1": {
+        "mean": 0.5907477216513501,
+        "std": 0.022041063189745837,
+        "train_mean": 0.6259094577110752
+      },
+      "precision": {
+        "mean": 0.67464546888509,
+        "std": 0.029484860848940853,
+        "train_mean": 0.7088622610444835
+      },
+      "recall": {
+        "mean": 0.5257525083612039,
+        "std": 0.021612701567094987,
+        "train_mean": 0.5605351170568561
+      },
+      "accuracy": {
+        "mean": 0.8067123613674367,
+        "std": 0.010676250837837083,
+        "train_mean": 0.8222845306787884
+      }
+    },
+    "random_forest": {
+      "average_precision": {
+        "mean": 0.662831595394937,
+        "std": 0.018875167646087494,
+        "train_mean": 0.7581125564700841
+      },
+      "roc_auc": {
+        "mean": 0.8475135561311482,
+        "std": 0.009299092431487646,
+        "train_mean": 0.8978391403849981
+      },
+      "f1": {
+        "mean": 0.5732880126348493,
+        "std": 0.010474083854060191,
+        "train_mean": 0.6407742782063808
+      },
+      "precision": {
+        "mean": 0.6793414918224099,
+        "std": 0.02675538099918596,
+        "train_mean": 0.7412455575989292
+      },
+      "recall": {
+        "mean": 0.49632107023411376,
+        "std": 0.009600468290573453,
+        "train_mean": 0.5645484949832775
+      },
+      "accuracy": {
+        "mean": 0.8038713886975749,
+        "std": 0.007265389961955452,
+        "train_mean": 0.8321353906936446
+      }
+    },
+    "logistic_regression": {
+      "average_precision": {
+        "mean": 0.6614931439626843,
+        "std": 0.01937405507766149,
+        "train_mean": 0.6671192200158035
+      },
+      "roc_auc": {
+        "mean": 0.846149025453707,
+        "std": 0.012561806211901928,
+        "train_mean": 0.8495939685982604
+      },
+      "f1": {
+        "mean": 0.5924124081667455,
+        "std": 0.029782414028798505,
+        "train_mean": 0.6027519512219262
+      },
+      "precision": {
+        "mean": 0.6520936350656179,
+        "std": 0.02561189459760602,
+        "train_mean": 0.6619068591023962
+      },
+      "recall": {
+        "mean": 0.5438127090301004,
+        "std": 0.040884834220564895,
+        "train_mean": 0.5533444816053511
+      },
+      "accuracy": {
+        "mean": 0.8019183578906889,
+        "std": 0.011767047320917268,
+        "train_mean": 0.8064875421039815
+      }
+    }
+  },
+  "trained_on": "training split only (test set untouched)",
+  "n_train": 5634,
+  "train_churn_rate": 0.2653532126375577,
+  "data_file": "Telco-Customer-Churn.csv",
+  "data_sha256": "88be4b93fbe0cc83421af1c503794c97c342eca914c1576db7c276e61d61358a",
+  "split_file": "data/processed/train_test_split.csv",
+  "split_sha256": "b9b401611724124cb947da1b9d17c85d0093386aa6d3491a8e7b32d1cde5fe1d"
+}

@@ -1,0 +1,144 @@
+{
+  "model_name": "random_forest",
+  "model_label": "Random Forest",
+  "created_utc": "2026-10-28T16:59:14+00:00",
+  "best_params": {
+    "model__class_weight": null,
+    "model__max_depth": 10,
+    "model__min_samples_leaf": 10
+  },
+  "selection_metric": "average_precision",
+  "cv_folds": 5,
+  "cv_scores": {
+    "average_precision": {
+      "mean": 0.662831595394937,
+      "std": 0.018875167646087494,
+      "train_mean": 0.7581125564700841
+    },
+    "roc_auc": {
+      "mean": 0.8475135561311482,
+      "std": 0.009299092431487646,
+      "train_mean": 0.8978391403849981
+    },
+    "f1": {
+      "mean": 0.5732880126348493,
+      "std": 0.010474083854060191,
+      "train_mean": 0.6407742782063808
+    },
+    "precision": {
+      "mean": 0.6793414918224099,
+      "std": 0.02675538099918596,
+      "train_mean": 0.7412455575989292
+    },
+    "recall": {
+      "mean": 0.49632107023411376,
+      "std": 0.009600468290573453,
+      "train_mean": 0.5645484949832775
+    },
+    "accuracy": {
+      "mean": 0.8038713886975749,
+      "std": 0.007265389961955452,
+      "train_mean": 0.8321353906936446
+    }
+  },
+  "cv_fold_scores": {
+    "average_precision": [
+      0.6429779240742636,
+      0.6408523460428266,
+      0.691378176856405,
+      0.6687916166299411,
+      0.6701579133712492
+    ],
+    "roc_auc": [
+      0.8427851291745433,
+      0.8341149241432795,
+      0.8449057243953274,
+      0.8557934661431826,
+      0.859968536799408
+    ],
+    "f1": [
+      0.558766859344894,
+      0.5660377358490566,
+      0.5862068965517241,
+      0.5714285714285714,
+      0.584
+    ],
+    "precision": [
+      0.6590909090909091,
+      0.6493506493506493,
+      0.6860986547085202,
+      0.6757990867579908,
+      0.7263681592039801
+    ],
+    "recall": [
+      0.48494983277591974,
+      0.5016722408026756,
+      0.5117056856187291,
+      0.49498327759197325,
+      0.4882943143812709
+    ],
+    "accuracy": [
+      0.7968056787932565,
+      0.7959183673469388,
+      0.808340727595386,
+      0.80301685891748,
+      0.8152753108348135
+    ]
+  },
+  "n_candidates": 24,
+  "param_grid": {
+    "model__max_depth": [
+      6,
+      10,
+      null
+    ],
+    "model__min_samples_leaf": [
+      1,
+      5,
+      10,
+      20
+    ],
+    "model__class_weight": [
+      null,
+      "balanced_subsample"
+    ]
+  },
+  "params_at_grid_edge": [],
+  "fit_seconds": 33.79,
+  "feature_columns": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "random_state": 42,
+  "versions": {
+    "python": "3.13.3",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.1.0",
+    "numpy": "2.5.4",
+    "joblib": "1.6.0"
+  },
+  "trained_on": "training split only (test set untouched)",
+  "n_train": 5634,
+  "train_churn_rate": 0.2653532126375577,
+  "data_file": "Telco-Customer-Churn.csv",
+  "data_sha256": "88be4b93fbe0cc83421af1c503794c97c342eca914c1576db7c276e61d61358a",
+  "split_file": "data/processed/train_test_split.csv",
+  "split_sha256": "b9b401611724124cb947da1b9d17c85d0093386aa6d3491a8e7b32d1cde5fe1d"
+}

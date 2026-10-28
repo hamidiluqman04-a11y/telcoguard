@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environment
+.venv/
+
+# marimo session/cache files
+__marimo__/
+
+# Generated artifacts (reproducible from the notebooks)
+models/*.joblib
+reports/*.html
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

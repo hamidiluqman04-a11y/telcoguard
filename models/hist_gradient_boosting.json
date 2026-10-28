@@ -1,0 +1,151 @@
+{
+  "model_name": "hist_gradient_boosting",
+  "model_label": "Histogram Gradient Boosting",
+  "created_utc": "2026-10-28T16:59:14+00:00",
+  "best_params": {
+    "model__class_weight": null,
+    "model__learning_rate": 0.03,
+    "model__max_leaf_nodes": 8,
+    "model__min_samples_leaf": 100
+  },
+  "selection_metric": "average_precision",
+  "cv_folds": 5,
+  "cv_scores": {
+    "average_precision": {
+      "mean": 0.6684916919359333,
+      "std": 0.021748824073205483,
+      "train_mean": 0.7167415839567803
+    },
+    "roc_auc": {
+      "mean": 0.8488231777152719,
+      "std": 0.011694663451864876,
+      "train_mean": 0.8739118260597054
+    },
+    "f1": {
+      "mean": 0.5907477216513501,
+      "std": 0.022041063189745837,
+      "train_mean": 0.6259094577110752
+    },
+    "precision": {
+      "mean": 0.67464546888509,
+      "std": 0.029484860848940853,
+      "train_mean": 0.7088622610444835
+    },
+    "recall": {
+      "mean": 0.5257525083612039,
+      "std": 0.021612701567094987,
+      "train_mean": 0.5605351170568561
+    },
+    "accuracy": {
+      "mean": 0.8067123613674367,
+      "std": 0.010676250837837083,
+      "train_mean": 0.8222845306787884
+    }
+  },
+  "cv_fold_scores": {
+    "average_precision": [
+      0.6508672390681145,
+      0.6357464253978965,
+      0.6947241505681958,
+      0.6793904166471338,
+      0.6817302279983262
+    ],
+    "roc_auc": [
+      0.8436555830223127,
+      0.8309542274570629,
+      0.8462427091916696,
+      0.8628661561081221,
+      0.8603972127971918
+    ],
+    "f1": [
+      0.5714285714285714,
+      0.5601503759398496,
+      0.6077348066298343,
+      0.5951940850277264,
+      0.6192307692307693
+    ],
+    "precision": [
+      0.6637168141592921,
+      0.6394849785407726,
+      0.6762295081967213,
+      0.6652892561983471,
+      0.7285067873303167
+    ],
+    "recall": [
+      0.5016722408026756,
+      0.4983277591973244,
+      0.5518394648829431,
+      0.5384615384615384,
+      0.5384615384615384
+    ],
+    "accuracy": [
+      0.8003549245785271,
+      0.7923691215616682,
+      0.8110026619343389,
+      0.805678793256433,
+      0.8241563055062167
+    ]
+  },
+  "n_candidates": 36,
+  "param_grid": {
+    "model__learning_rate": [
+      0.03,
+      0.1
+    ],
+    "model__max_leaf_nodes": [
+      4,
+      8,
+      31
+    ],
+    "model__min_samples_leaf": [
+      20,
+      50,
+      100
+    ],
+    "model__class_weight": [
+      null,
+      "balanced"
+    ]
+  },
+  "params_at_grid_edge": [
+    "model__learning_rate",
+    "model__min_samples_leaf"
+  ],
+  "fit_seconds": 26.93,
+  "feature_columns": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "random_state": 42,
+  "versions": {
+    "python": "3.13.3",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.1.0",
+    "numpy": "2.5.4",
+    "joblib": "1.6.0"
+  },
+  "trained_on": "training split only (test set untouched)",
+  "n_train": 5634,
+  "train_churn_rate": 0.2653532126375577,
+  "data_file": "Telco-Customer-Churn.csv",
+  "data_sha256": "88be4b93fbe0cc83421af1c503794c97c342eca914c1576db7c276e61d61358a",
+  "split_file": "data/processed/train_test_split.csv",
+  "split_sha256": "b9b401611724124cb947da1b9d17c85d0093386aa6d3491a8e7b32d1cde5fe1d"
+}

@@ -1,0 +1,73 @@
+{
+  "model_name": "hist_gradient_boosting",
+  "model_label": "Histogram Gradient Boosting",
+  "model_file": "hist_gradient_boosting.joblib",
+  "selection_rule": "best cross-validated PR-AUC (Notebook 3), fixed before test evaluation",
+  "threshold": 0.3,
+  "threshold_policy": "max_f1_oof",
+  "threshold_rule": "maximise F1 on 5-fold out-of-fold training predictions",
+  "test_metrics_at_threshold": {
+    "threshold": 0.3,
+    "roc_auc": 0.8488297295202666,
+    "average_precision": 0.6628232641724432,
+    "precision": 0.5360443622920518,
+    "recall": 0.7754010695187166,
+    "f1": 0.6338797814207651,
+    "accuracy": 0.7622427253371186,
+    "brier": 0.13451922224836416,
+    "flagged_share": 0.38396025550035484,
+    "tn": 784,
+    "fp": 251,
+    "fn": 84,
+    "tp": 290
+  },
+  "test_metrics_at_0_5": {
+    "threshold": 0.5,
+    "roc_auc": 0.8488297295202666,
+    "average_precision": 0.6628232641724432,
+    "precision": 0.6797153024911032,
+    "recall": 0.5106951871657754,
+    "f1": 0.583206106870229,
+    "accuracy": 0.8062455642299503,
+    "brier": 0.13451922224836416,
+    "flagged_share": 0.1994322214336409,
+    "tn": 945,
+    "fp": 90,
+    "fn": 183,
+    "tp": 191
+  },
+  "cv_scores": {
+    "average_precision": {
+      "mean": 0.6684916919359333,
+      "std": 0.021748824073205483,
+      "train_mean": 0.7167415839567803
+    },
+    "roc_auc": {
+      "mean": 0.8488231777152719,
+      "std": 0.011694663451864876,
+      "train_mean": 0.8739118260597054
+    },
+    "f1": {
+      "mean": 0.5907477216513501,
+      "std": 0.022041063189745837,
+      "train_mean": 0.6259094577110752
+    },
+    "precision": {
+      "mean": 0.67464546888509,
+      "std": 0.029484860848940853,
+      "train_mean": 0.7088622610444835
+    },
+    "recall": {
+      "mean": 0.5257525083612039,
+      "std": 0.021612701567094987,
+      "train_mean": 0.5605351170568561
+    },
+    "accuracy": {
+      "mean": 0.8067123613674367,
+      "std": 0.010676250837837083,
+      "train_mean": 0.8222845306787884
+    }
+  },
+  "n_test": 1409,
+  "split_sha256": "b9b401611724124cb947da1b9d17c85d0093386aa6d3491a8e7b32d1cde5fe1d"
+}

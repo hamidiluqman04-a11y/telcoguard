@@ -1,0 +1,138 @@
+{
+  "model_name": "logistic_regression",
+  "model_label": "Logistic Regression",
+  "created_utc": "2026-10-28T16:59:14+00:00",
+  "best_params": {
+    "model__C": 1.0,
+    "model__class_weight": null
+  },
+  "selection_metric": "average_precision",
+  "cv_folds": 5,
+  "cv_scores": {
+    "average_precision": {
+      "mean": 0.6614931439626843,
+      "std": 0.01937405507766149,
+      "train_mean": 0.6671192200158035
+    },
+    "roc_auc": {
+      "mean": 0.846149025453707,
+      "std": 0.012561806211901928,
+      "train_mean": 0.8495939685982604
+    },
+    "f1": {
+      "mean": 0.5924124081667455,
+      "std": 0.029782414028798505,
+      "train_mean": 0.6027519512219262
+    },
+    "precision": {
+      "mean": 0.6520936350656179,
+      "std": 0.02561189459760602,
+      "train_mean": 0.6619068591023962
+    },
+    "recall": {
+      "mean": 0.5438127090301004,
+      "std": 0.040884834220564895,
+      "train_mean": 0.5533444816053511
+    },
+    "accuracy": {
+      "mean": 0.8019183578906889,
+      "std": 0.011767047320917268,
+      "train_mean": 0.8064875421039815
+    }
+  },
+  "cv_fold_scores": {
+    "average_precision": [
+      0.6436603781967023,
+      0.6354515821966427,
+      0.6858650286154746,
+      0.6781883619469635,
+      0.664300368857638
+    ],
+    "roc_auc": [
+      0.8478907146203934,
+      0.8251276396361463,
+      0.8419005380253016,
+      0.8628742345661059,
+      0.8529520004205877
+    ],
+    "f1": [
+      0.5850091407678245,
+      0.5494505494505495,
+      0.5888888888888889,
+      0.6424870466321243,
+      0.5962264150943396
+    ],
+    "precision": [
+      0.6451612903225806,
+      0.6072874493927125,
+      0.6597510373443983,
+      0.6642857142857143,
+      0.683982683982684
+    ],
+    "recall": [
+      0.5351170568561873,
+      0.5016722408026756,
+      0.5317725752508361,
+      0.6220735785953178,
+      0.5284280936454849
+    ],
+    "accuracy": [
+      0.7985803016858918,
+      0.7817213842058562,
+      0.80301685891748,
+      0.8163265306122449,
+      0.8099467140319716
+    ]
+  },
+  "n_candidates": 8,
+  "param_grid": {
+    "model__C": [
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "model__class_weight": [
+      null,
+      "balanced"
+    ]
+  },
+  "params_at_grid_edge": [],
+  "fit_seconds": 5.37,
+  "feature_columns": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "random_state": 42,
+  "versions": {
+    "python": "3.13.3",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.1.0",
+    "numpy": "2.5.4",
+    "joblib": "1.6.0"
+  },
+  "trained_on": "training split only (test set untouched)",
+  "n_train": 5634,
+  "train_churn_rate": 0.2653532126375577,
+  "data_file": "Telco-Customer-Churn.csv",
+  "data_sha256": "88be4b93fbe0cc83421af1c503794c97c342eca914c1576db7c276e61d61358a",
+  "split_file": "data/processed/train_test_split.csv",
+  "split_sha256": "b9b401611724124cb947da1b9d17c85d0093386aa6d3491a8e7b32d1cde5fe1d"
+}
