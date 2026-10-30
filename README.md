@@ -9,6 +9,11 @@ as a read-only app, or run as a script.
 Built with Python, marimo, pandas, NumPy, scikit-learn, Plotly, joblib and
 pytest. There is no separate web framework.
 
+> **New here or not technical?** Read the **[User guide](docs/USER_GUIDE.md)**.
+> It covers who TelcoGuard is for, how to read its results, a
+> retention-campaign workflow, using your own data, privacy and fairness, and
+> when to retrain.
+
 ---
 
 ## Results at a glance
@@ -62,6 +67,7 @@ telcoguard/
 ├── models/                             # fitted pipelines (*.joblib) + metadata (*.json)
 ├── reports/                            # test_threshold_results.csv
 ├── tests/                              # 118 pytest tests
+├── docs/USER_GUIDE.md                  # who should use it and how; read this first
 ├── requirements.txt
 ├── pytest.ini
 └── README.md
